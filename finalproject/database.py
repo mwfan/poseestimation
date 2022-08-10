@@ -1,4 +1,4 @@
-from finalproject.storagemanager import StorageManager
+from storagemanager import StorageManager
 
 sm = StorageManager()
 
