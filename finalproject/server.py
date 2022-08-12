@@ -8,13 +8,13 @@ import cv2
 
 #initialize flask model
 app = Flask(__name__)
-app.config['UPLOAD_EXTENSIONS'] = ['.mpeg', 'mp4', 'mov']
 
 @app.route("/sarah")
 def hello():
     return "Hello!"
 
 #map specific url
+app.config['UPLOAD_EXTENSIONS'] = ['.mpeg', 'mp4', 'mov']
 @app.route('/analyze', methods=['GET', 'POST'])
 def edit_video():
     #receiving request + storing into variables
